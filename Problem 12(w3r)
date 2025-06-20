@@ -34,3 +34,21 @@ class Circle extends Shape{
 		return area;
 	}
 }
+
+
+public class Cylinder extends Shape {
+	public Cylinder(double radius,double height) {
+		super(radius,height);
+	}
+	
+	@Override
+	public void draw() {
+		System.out.println("Cylinder Shape Drawn");
+	}
+	
+	@Override
+	public double calculateArea() {
+		double area= (2*3.1416*radius*height)+(2*3.1416*radius*radius);
+		return area;
+	}
+}
