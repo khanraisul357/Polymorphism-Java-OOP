@@ -1,4 +1,4 @@
-public class Shape {
+class Shape {
 	double radius;
 	double height;
 	public Shape(double radius) {
