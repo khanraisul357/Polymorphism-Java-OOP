@@ -52,3 +52,19 @@ class Cylinder extends Shape {
 		return area;
 	}
 }
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Shape circle=new Circle(5);
+		Shape cylinder=new Cylinder(5,10);
+		
+		circle.draw();
+        cylinder.draw();
+        
+        double areaOfCylinder=cylinder.calculateArea();
+        System.out.println("Surfce Area of Cylinder = "+areaOfCylinder);
+	}
+
+}
