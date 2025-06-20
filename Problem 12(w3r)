@@ -1,1 +1,19 @@
+public class Shape {
+	double radius;
+	double height;
+	public Shape(double radius) {
+		this.radius=radius;
+	}
+	public Shape(double radius,double height) {
+		this.radius=radius;
+		this.height=height;
+	}
+	public void draw() {
+		System.out.println("Shape drawn");
+	}
+	
+	public double calculateArea() {
+		return 0.0;
+	}
+}
 
