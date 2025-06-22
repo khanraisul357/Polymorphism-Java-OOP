@@ -19,8 +19,10 @@ class PaymentProcessor {
     }
 }
 
+
 public class Main {
     public static void main(String[] args) {
+
         PaymentProcessor obj = new PaymentProcessor();
 
         obj.processPayment(100000.0); // Cash
@@ -28,4 +30,3 @@ public class Main {
         obj.processPayment("241-35-088", 100000.0, "2367"); // Digital Wallet
     }
 }
-
