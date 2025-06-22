@@ -30,3 +30,19 @@ public class Main {
         obj.processPayment("241-35-088", 100000.0, "2367"); // Digital Wallet
     }
 }
+
+
+#Description
+
+-->Class: PaymentProcessor
+Concept: Overload processPayment() method for different payment types.
+
+Methods to Define:
+
+void processPayment(double amount) → for cash
+void processPayment(String cardNumber, double amount) → for card
+void processPayment(String walletId, double amount, String otp) → for digital wallet
+
+Instructions:
+Show how different payment methods can be processed using method overloading.
+Use method overloading to simulate compile-time polymorphism.
