@@ -1,1 +1,31 @@
+public class PaymentProcessor {
+    
+    public void processPayment(double amount) {
+        System.out.println("Processing cash payment...");
+        System.out.println("Cash Payment Amount: " + amount);
+    }
+
+    public void processPayment(String cardNumber, double amount) {
+        System.out.println("Processing card payment...");
+        System.out.println("Card Number: " + cardNumber);
+        System.out.println("Amount: " + amount);
+    }
+
+    public void processPayment(String walletId, double amount, String otp) {
+        System.out.println("Processing digital wallet payment...");
+        System.out.println("Wallet ID: " + walletId);
+        System.out.println("Amount: " + amount);
+        System.out.println("OTP (Do not share): " + otp);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        PaymentProcessor obj = new PaymentProcessor();
+
+        obj.processPayment(100000.0); // Cash
+        obj.processPayment("0121 2191 6800", 100000.0); // Card
+        obj.processPayment("241-35-088", 100000.0, "2367"); // Digital Wallet
+    }
+}
 
