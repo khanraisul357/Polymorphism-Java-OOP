@@ -1,1 +1,44 @@
+class User {
+	
+	public void accessPortal() {
+		System.out.println("Accessing generic portal…");
+	}
+	
+}
 
+
+class Student extends User{
+	
+	@Override
+	public void accessPortal() {
+		System.out.println("Student dashboard accessed.");
+	}
+	
+}
+
+
+class Instructor extends User{
+	
+	@Override
+	public void accessPortal() {
+		System.out.println("Instructor dashboard accessed.");
+	}
+	
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		User user=new User();
+		User student=new Student();
+		User instructor=new Instructor();
+		
+		user.accessPortal();
+		student.accessPortal();
+		instructor.accessPortal();
+		
+	}
+
+}
