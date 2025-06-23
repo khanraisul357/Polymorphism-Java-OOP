@@ -1,1 +1,70 @@
+class Shape {
+    public void draw() {
+        System.out.println("Drawing a shape…");
+    }
+}
 
+
+class Triangle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a triangle…");
+    }
+}
+
+
+class Rectangle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a rectangle…");
+    }
+}
+
+
+class Circle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle…");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Shape[] arr = new Shape[4];
+
+        arr[0] = new Shape();
+        arr[1] = new Triangle();
+        arr[2] = new Rectangle();
+        arr[3] = new Circle();
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i].draw();
+        }
+    }
+}
+
+
+#Description:
+
+-->Base Class: Shape
+-->Subclass: Triangle, Rectangle, Circle
+Concept: Override draw() for each shape.
+
+Methods to Define:
+
+In Shape:
+void draw() → print “Drawing a shape…”
+
+In Triangle:
+Override draw() → print “Drawing a triangle…”
+
+In Rectangle:
+Override draw() → print “Drawing a rectangle…”
+
+In Circle:
+Override draw() → print “Drawing a circle…”
+
+Instructions:
+Create an array of Shape type and store different subclass objects.
+Call draw() in a loop to show polymorphic behavior.
