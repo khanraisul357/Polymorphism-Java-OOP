@@ -17,3 +17,32 @@ class Logger {
 	
 }
 
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Logger logger=new Logger();
+		
+		logger.log("log in successful");
+		logger.log("log in successful",10);
+		logger.log("log in successful","10:30AM");
+		
+	}
+
+}
+
+
+#Description:
+
+-->Class: Logger
+Concept: Log messages of different types using overloading.
+
+Methods to Define:
+void log(String message) → logs general message
+void log(String message, int level) → logs with severity level
+void log(String message, String timestamp) → logs with timestamp
+
+Instructions:
+Simulate how logging systems provide multiple overloads to handle varying inputs.
+Emphasize compile-time polymorphism through method resolution.
