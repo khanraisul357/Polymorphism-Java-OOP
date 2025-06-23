@@ -1,1 +1,35 @@
+class Vehicle {
+    public void startEngine() {
+        System.out.println("Generic vehicle engine starting…");
+    }
+}
+
+
+class Car extends Vehicle {
+    @Override
+    public void startEngine() {
+        System.out.println("Car engine starting with key…");
+    }
+}
+
+
+class Bike extends Vehicle {
+    @Override
+    public void startEngine() {
+        System.out.println("Bike engine starting with button…");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle();
+        Vehicle car = new Car();     // base class reference to subclass object
+        Vehicle bike = new Bike();   // base class reference to subclass object
+
+        vehicle.startEngine();  // Output: Generic vehicle engine starting…
+        car.startEngine();      // Output: Car engine starting with key…
+        bike.startEngine();     // Output: Bike engine starting with button…
+    }
+}
 
