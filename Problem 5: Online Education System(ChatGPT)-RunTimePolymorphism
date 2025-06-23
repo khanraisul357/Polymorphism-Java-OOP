@@ -42,3 +42,24 @@ public class Main {
 	}
 
 }
+
+
+#Description:
+
+-->Base Class: User
+-->Subclass: Student, Instructor
+Concept: Override accessPortal() based on user type.
+
+Methods to Define:
+
+In User:
+void accessPortal() → print “Accessing generic portal…”
+
+In Student:
+Override accessPortal() → print “Student dashboard accessed.”
+
+In Instructor:
+Override accessPortal() → print “Instructor dashboard accessed.”
+
+Instructions:
+Demonstrate polymorphism via a method that takes User reference and shows role-specific behavior.
