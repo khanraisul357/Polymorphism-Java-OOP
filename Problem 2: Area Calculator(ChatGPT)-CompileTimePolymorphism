@@ -39,3 +39,18 @@ public class Main {
 	}
 
 }
+
+
+#Description:
+
+-->Class: Geometry
+Concept: Calculate area for different shapes using overloaded methods.
+
+Methods to Define:
+double area(double side) → square
+double area(double length, double width) → rectangle
+double area(double radius, boolean isCircle) → circle
+
+Instructions:
+Add condition inside third method to ensure the boolean flag triggers correct overload.
+Demonstrate all overloads in the main() method.
