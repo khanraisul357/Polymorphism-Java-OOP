@@ -26,11 +26,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Geometry obj=new Geometry();
+		Geometry geometry=new Geometry();
 		
-		double square=obj.area(5);
-		double rectangle=obj.area(10.0, 5.0);
-		double circle=obj.area(12, true);
+		double square=geometry.area(5);
+		double rectangle=geometry.area(10.0, 5.0);
+		double circle=geometry.area(12, true);
 		
 		System.out.println("Area Of Square = "+square);
 		System.out.println("Area Of Rectangle = "+rectangle);
