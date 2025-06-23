@@ -1,1 +1,19 @@
+class Logger {
+	
+	public void log(String message) {
+		System.out.println("Status : "+message);
+	}
+
+	public void log(String message, int level) {
+		System.out.println("Status : "+message);
+		System.out.println("Severity Level : " + level);
+	}
+	
+	public void log(String message, String timestamp) {
+		System.out.println("Status : "+message);
+		System.out.println("Logged At : " + timestamp);
+		
+	}
+	
+}
 
